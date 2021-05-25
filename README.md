@@ -7,7 +7,7 @@ Setup
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 Download the ZIP from this location, or run the following git command to clone the files to your machine.
-git clone 
+git clone https://github.com/simranbijay786/Great-Learning.git
 Once the files are on your machine, open the GreatLearning folder in Sublime/Notepad.
 
 Website Content
