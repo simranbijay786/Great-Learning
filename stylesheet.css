@@ -1,0 +1,95 @@
+body, html { height: 100%; width: 100%; margin: 0px; overflow-x: hidden; font-family: Arial, Helvetica, sans-serif;
+}
+* { box-sizing: border-box; }
+#myBtn { display: none; position: fixed; bottom: 100px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; background-color: grey; color: white; cursor: pointer; padding: 15px; border-radius: 80px; }
+.bg-img { min-height: 600px; background-repeat: no-repeat; background-size: cover; position: relative; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg'); background-position:center center; background-attachment: fixed; }
+@media screen and (max-width: 939px) {
+  .bg-img { min-height: 800px; } 
+  .PG_heading {top: 500px !important; right: 16px; left: 0 !important;} 
+  .pgpg { font-size: 20px !important; padding-left: 30px !important; } 
+  .vl {margin-left: 30px !important;} 
+  .learnline {font-size: 15px !important;} 
+  .monthsline {font-size: 15px !important; padding-left: 30px !important; margin-top: 30px;} 
+  .container { left: 0; max-width: 90% !important; max-height: 500px !important; margin-left: auto !important; margin-right: auto !important; } 
+  .grid-container-one { grid-template-columns: 2fr !important; }
+  .LO_grid { grid-template-columns: 2fr !important; }
+  .grid-container {display: none !important;} 
+  .para { width: 90%; padding-left: 0 !important; margin-left: auto; margin-right: auto; } 
+  .item01 { padding: 0 !important; width: 90% !important; margin-left: auto; margin-right: auto; }
+  .prev, .next {display: none;}
+  .explore {display: none;} 
+  .btn1 {width: 50% !important; margin: 1%;}
+}
+.PG_heading { position: absolute; top: 90px; left: 16px; font-size: 40px; font-style: normal; color: white;}
+.vl { border-left: 3px solid white; height: 50px; margin-left: 70px;}
+hr { width:60px; margin-top: -10px;}
+hr.head1{  border: 2px solid #2196f3; border-radius: 8px; width: 140px; height: .5px; background-color: #03f; margin-top: -35px; }
+/* Add styles to the form container */
+.container { position: absolute; right: 0; margin: 20px; max-width: 300px; max-height: 400px; margin-top: 70px;
+  padding: 16px; background-color: white; border-radius: 5px;}
+.Form_heading{ text-align: center; font-size: 18px;}
+.item1 {position: relative; padding-bottom: 90.25%; /* 16:9 ratio */ padding-top: 25px; height: 0;}
+.item1 iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+/* Full-width input fields */
+input[type=text] { width: 100%; padding: 6px; margin: 5px 0 15px 0; border: none; background: #f1f1f1; border-radius: 5px;}
+input[type=text]:focus { background-color: #ddd; outline: none;}
+.btn { background-color: #03a9f4; color: white; padding: 10px 10px; border: none; cursor: pointer; width: 50%; border-radius: 5px; opacity: 0.9;}
+.btn:hover { opacity: 1;}    
+#org { width: 100%; padding: 6px; margin: 5px 0 15px 0; border: none; background: #f1f1f1; border-radius: 5px; color: grey;}
+.Login_btn { display: flex; justify-content: center; align-items: center; }
+.Heading{ font-weight: 600; font-size: 23px; text-align: center; padding: 20px; font-family: ariel, sans-serif;}
+.grid-container { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 10px; width: 99%; margin: auto; }
+.grid-container-one { display: grid; grid-template-columns: 1fr 2fr 1fr; grid-gap: 10px; padding: 10px;}
+@media screen and (min-width: 940px) {.grid-container {display: grid; padding: 40px;}}
+.grid-container > div { text-align: center; padding: 20px 0; }
+.item2, .item3, .item4 {width: 100px; height: 100px; margin: auto; font-size: 30px; border-radius: 50%;}
+.accordion_bg{background-color: #c4ecf14a;} 
+.acc_str{ width: 100%; padding: 20px; padding-top: 30px; }
+.active, .accordion:hover { background-color: #ccc; }
+.accordion:after { content: '\002B'; color: #777; font-weight: bold; float: right; margin-left: 5px; }
+.accordion {background-color: white; color: #444; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; transition: 0.4s;border: black; border-style: solid; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;}
+.active:after { content: "";}
+.panel { padding: 0 18px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
+.LO_grid { display: grid; grid-template-columns: 2fr 1fr; grid-gap: 10px; padding: 10px; }
+.LO_grid > div { text-align: center; padding: 20px 0; font-size: 30px;}
+.item01 { grid-column: 1 / 2;}
+.laptop{ width: 100%; max-width: 400px; height: auto; }
+.Carousel-container { position: relative; background: white; padding-top: 30px; }
+.Carousel { display: none; padding: 30px; text-align: center;}
+.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -30px; padding: 16px; color: #888; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; user-select: none;}
+.next { position: absolute; right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover { color: grey; }
+/* The dot/bullet/indicator container */
+.dot-container { text-align: center; padding-bottom: 60px; background: white;}
+/* The dots/bullets/indicators */
+.dot { cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%;
+  display: inline-block; transition: background-color 0.6s ease;}
+/* Add a background color to the active dot/circle */
+.active, .dot:hover { background-color: #717171; }
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.footer-content{background-color: #d7dfe0a8; font-size: 14px; text-align: justify; padding-bottom: 80px; padding-top: 20px; margin-bottom: 20px;padding-left: 20px; padding-right: 20px;}
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #17175f; color: white; text-align: center;}
+.btn1 { background-color: white; color: blue; padding: 10px 10px; border: none; cursor: pointer; width: 15%; border-radius: 5px;
+    opacity: 0.9;}
+.btn1:hover { opacity: 1;}
+#chktxt { font-size: small; }
+.pgpg { font-size: 25px; padding-left: 80px; }
+.learnline {font-size: 20px; padding-left: 20px;}
+.monthsline {font-size: 18px; padding-left: 70px;}
+* { box-sizing: border-box; }
+/* on PC */
+@media screen and (min-width: 550px) {
+  .item02{ float: left; width: 40%; padding-right: 15px; }
+  .item02 img { width: 800px !important; }
+  .item01 { float: left; width: 60%;}
+}
+/* on Mobile */
+@media screen and (max-width: 550px) {
+  .item02 {width: 100% !important;}
+  .item02 img {width: 100% !important;} 
+  .item01 {width: 100% !important;}
+}
+.para {font-size: 15px; text-align: left;padding-left: 40px;}
